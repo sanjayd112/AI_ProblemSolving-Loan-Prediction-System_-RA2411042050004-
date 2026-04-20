@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Approval System</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="main">
+
+    <!-- LEFT: FORM -->
+    <div class="box">
+
+        <h2>Loan Prediction System</h2>
+
+        <form action="/predict" method="post">
+
+            <input type="number" name="income" placeholder="Enter Income" required>
+
+            <input type="number" name="credit" placeholder="Credit Score" required>
+
+            <select name="employment" required>
+                <option>Employed</option>
+                <option>Self-Employed</option>
+                <option>Unemployed</option>
+            </select>
+
+            <input type="number" name="loan" placeholder="Loan Amount" required>
+
+            <button type="submit">Predict</button>
+
+        </form>
+
+        <h3 class="result">{{ prediction }}</h3>
+
+    </div>
+
+    <!-- RIGHT: INFO PANEL -->
+    <div class="info">
+
+        <h2>📊 Loan Eligibility Rules</h2>
+
+        <hr>
+
+        <h3>💰 Income Range</h3>
+        <p>Minimum: ₹20,000</p>
+        <p>Preferred: ₹50,000+</p>
+        <p>High Approval: ₹80,000+</p>
+
+        <hr>
+
+        <h3>📈 Credit Score</h3>
+        <p>Minimum: 600</p>
+        <p>Good: 700+</p>
+        <p>Excellent: 750+</p>
+
+        <hr>
+
+        <h3>🏦 Loan Amount</h3>
+        <p>Minimum: ₹50,000</p>
+        <p>Normal Range: ₹1,00,000 – ₹4,00,000</p>
+        <p>High Risk: Above ₹4,00,000</p>
+
+        <hr>
+
+        <h3>⚠️ Note</h3>
+        <p>Final approval depends on combined eligibility factors.</p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
