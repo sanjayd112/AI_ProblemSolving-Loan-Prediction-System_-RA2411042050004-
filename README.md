@@ -1,2 +1,24 @@
-# AI_ProblemSolving-Loan-Prediction-System_-RA2411042050004-
-AI-based Loan Approval Prediction System using Logistic Regression. Predicts loan approval (Approved/Rejected) based on user financial details.
+# 💰 Loan Approval Prediction System
+
+## 📌 Problem Description
+This project predicts whether a loan application will be approved or rejected using Machine Learning techniques.
+
+---
+
+## 🤖 Algorithm Used
+- Logistic Regression (Classification Algorithm)
+- Supervised Learning
+
+---
+
+## 📊 Input Features
+- Income
+- Credit Score
+- Employment Status
+- Loan Amount
+
+---
+
+## ⚙️ How to Run
+
+### Install dependencies
